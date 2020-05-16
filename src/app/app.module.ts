@@ -6,6 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatListModule} from '@angular/material/list';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -33,6 +34,7 @@ import { TransactionComponent } from './transaction/transaction.component';
     MatRippleModule,
     MatCardModule,
     MatListModule,
+    HttpClientModule,
     BrowserAnimationsModule
   ],
   providers: [],

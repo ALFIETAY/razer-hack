@@ -2,15 +2,14 @@ p {
     font-weight: bold;
   }
   
-//   .mat-list-item {
-//     /* background-color: #222b45;  */
-//     border-top: 3px solid #151a30;
-//     border-bottom: 1.5px solid #151a30;
-//     animation: highlight 7s;
-//   }
+  .mat-list-item {
+    /* background-color: #222b45;  */
+    border-bottom: 0.8px solid rgb(53, 63, 223);
+    animation: highlight 3s;
+  }
   
   @keyframes highlight {
-    from {opacity: 0; background-color: #4173ff;}
+    from {opacity: 0; background-color: lightness($color: #000000);}
     to {opacity: 1; background-color: none;}
   }
   
@@ -37,13 +36,22 @@ p {
     padding: 0;
   }
   
-  .date {
+  .transactionId {
+    font-weight: bold !important;
+    font-family: 'rubik', 'arial', sans-serif;
+  }
+
+  .amount {
     float: right !important;
-    font-size: 12px;
+    font-size: 16px;
+    color: rgb(53, 63, 223);
+    font-weight: bold;
+    font-family: 'rubik', 'arial', sans-serif;
   }
   
-  .event {
+  .type {
     font-size: 13.5px;
+    font-family: 'rubik', 'arial', sans-serif;
   }
   
   /* Hide scrollbar for Chrome, Safari & Opera */
