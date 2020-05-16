@@ -1,1 +1,17 @@
-<p>scheme works!</p>
+<div class="header"><h1>Schemes and Fundings</h1></div>
+
+<div class="container">
+    <mat-accordion>
+    <mat-expansion-panel *ngFor="let item of bucket;" (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        {{item[1].schemeName}}
+      </mat-expansion-panel-header>
+      <h4>Scheme Id:</h4><p>{{item[1].schemeId}}</p>
+      <h4>Points to Note</h4>
+      <p>Employee: {{item[1].employees}}</p>
+      <p>Local Shareholding: {{item[1].localShareholding}}</p>
+      <button mat-raised-button color="primary">Apply</button>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
