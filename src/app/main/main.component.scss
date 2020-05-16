@@ -1,0 +1,42 @@
+.block_container{
+    padding-top: 30px;
+}
+
+.card_container{
+    min-height: 100px;
+    max-height: 300px;
+}
+
+.div-left {
+    float:left;
+    padding-left:20px;
+}
+.div-right {
+    float:right;
+    padding-right:20px;
+}
+
+h1 {
+    font-family: 'rubik', 'arial', sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'rubik', 'arial', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.amount {
+    position: relative;
+    padding-top:30px;
+    text-align: center;
+    color: rgb(53, 63, 223);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+}

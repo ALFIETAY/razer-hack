@@ -1,0 +1,18 @@
+.center {
+  width: 25%;
+  float: center;
+  text-align: center;
+}
+
+.bottom {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  border-top: 0.5px solid rgb(53, 63, 223);
+}
+
+.grey {
+  color: rgb(53, 63, 223);
+}
