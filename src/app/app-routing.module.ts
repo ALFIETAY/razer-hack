@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MainComponent } from './main/main.component';
-import { AppComponent } from './app.component';
+import { HistoryComponent } from './history/history.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/main', pathMatch: 'full' },
-  { path: 'main', component: MainComponent }
+  { path: 'main', component: MainComponent },
+  { path: 'history', component: HistoryComponent }
 ];
 
 @NgModule({

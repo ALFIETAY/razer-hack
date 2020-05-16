@@ -3,11 +3,6 @@ import { MatTableDataSource } from '@angular/material/table';
 import { DataService } from '../data.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-export interface clientData {
-  firstName: String
-  id: Number
-}
-
 @Component({
   selector: 'app-transaction',
   templateUrl: './transaction.component.html',
@@ -25,7 +20,7 @@ export class TransactionComponent implements OnInit {
   accountId: String
   bucket: any[] = [];
 
-  constructor(private dataService: DataService, private http: HttpClient) { }
+ constructor(private dataService: DataService, private http: HttpClient) { }
   authorizationData = 'Basic ' + btoa(this.username + ':' + this.password);
 
   headerOptions = {
@@ -61,8 +56,8 @@ export class TransactionComponent implements OnInit {
       });
   }
 
-  ngOnInit() {
-    //get Encoded id
+  //get Encoded Id
+  public getEncodedId() {
     this.dataService.getEncodedID().subscribe(data => { // json data
       this.encodedId = data[0].encodedKey
       this.getAccount()
@@ -70,5 +65,9 @@ export class TransactionComponent implements OnInit {
     error => {
         return console.log('Error: ', error);
     });
+  }
+
+  ngOnInit() {
+    this.getEncodedId()
   }
 }

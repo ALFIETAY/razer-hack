@@ -16,13 +16,17 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatRippleModule} from '@angular/material/core';
 import { TransactionComponent } from './transaction/transaction.component';
+import { HistoryComponent } from './history/history.component';
+import { SchemeComponent } from './scheme/scheme.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     NavbarComponent,
-    TransactionComponent
+    TransactionComponent,
+    HistoryComponent,
+    SchemeComponent
   ],
   imports: [
     BrowserModule,
