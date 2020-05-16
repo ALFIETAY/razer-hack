@@ -6,8 +6,9 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatListModule} from '@angular/material/list';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatFormFieldModule} from '@angular/material/form-field';
 import { HttpClientModule } from '@angular/common/http';
-
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,8 @@ import {MatRippleModule} from '@angular/material/core';
 import { TransactionComponent } from './transaction/transaction.component';
 import { HistoryComponent } from './history/history.component';
 import { SchemeComponent } from './scheme/scheme.component';
+import { ProfileComponent } from './profile/profile.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,9 @@ import { SchemeComponent } from './scheme/scheme.component';
     NavbarComponent,
     TransactionComponent,
     HistoryComponent,
-    SchemeComponent
+    SchemeComponent,
+    ProfileComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,9 @@ import { SchemeComponent } from './scheme/scheme.component';
     MatRippleModule,
     MatCardModule,
     MatListModule,
+    MatFormFieldModule,
     HttpClientModule,
+    MatExpansionModule,
     BrowserAnimationsModule
   ],
   providers: [],
