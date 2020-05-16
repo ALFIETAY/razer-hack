@@ -1,0 +1,61 @@
+p {
+    font-weight: bold;
+  }
+  
+  .mat-list-item {
+    /* background-color: #222b45;  */
+    border-bottom: 0.8px solid rgb(53, 63, 223);
+    animation: highlight 3s;
+  }
+  
+  @keyframes highlight {
+    from {opacity: 0; background-color: lightness($color: #000000);}
+    to {opacity: 1; background-color: none;}
+  }
+  
+  .mat-card {
+    border: none !important;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .mat-card:not([class*=mat-elevation-z]){
+    box-shadow: none;
+  }
+
+  .mat-card-title {
+    font-size: 18px;
+    font-family: 'rubik', 'arial', sans-serif;
+    font-weight: bold;
+  }
+  
+  .container{
+    width: auto;
+    max-height: 100%;
+    overflow: scroll;
+    padding: 0;
+  }
+  
+  .transactionId {
+    font-weight: bold !important;
+    font-family: 'rubik', 'arial', sans-serif;
+  }
+
+  .amount {
+    float: right !important;
+    font-size: 16px;
+    color: rgb(53, 63, 223);
+    font-weight: bold;
+    font-family: 'rubik', 'arial', sans-serif;
+  }
+  
+  .type {
+    font-size: 13.5px;
+    font-family: 'rubik', 'arial', sans-serif;
+  }
+  
+  /* Hide scrollbar for Chrome, Safari & Opera */
+  .container::-webkit-scrollbar {
+    display: none;
+  }
+  
